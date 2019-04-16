@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form action="/account" method="POST">
+	<input type = "text" name = "movievalue">
+	<input type = "submit" value = "RECOMMEND">
+</form>
+<ul>
+{% for item in movie1 %}
+  <li> {{ item }}</li>
+{% endfor %}
+</ul>>
+{% endblock content %}
